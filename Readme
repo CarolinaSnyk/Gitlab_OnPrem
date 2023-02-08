@@ -49,4 +49,5 @@ docker run --name code-agent \
 
 Para ver estas instrucciones en ingles por favor revisar este repo https://gist.github.com/akanchhaS/2fd0f4d6b68b7f7ea2f045db4dd51796
    
+Para tener acceso de toda la informacion de el Broker de Snyk, aqui puede encontrar la documentacion oficial que explica en mas detalle toda la informacion demonstrada en este documento https://docs.snyk.io/integrations/snyk-broker
 
