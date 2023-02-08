@@ -3,7 +3,6 @@
 
 docker pull snyk/broker:gitlab
 
-
 2. Saca la imagen de code-agent para habilitar la funcion del escaneo SAST
 
 docker pull snyk/code-agent
