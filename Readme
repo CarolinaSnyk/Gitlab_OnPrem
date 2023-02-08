@@ -1,20 +1,19 @@
-# Mas informacion acerca de otras integraciones del Broker 
 
-# 1. Baja la imagen correcta de docker
+1. Baja la imagen correcta de docker
 
 docker pull snyk/broker:gitlab
 
-# 2. Saca la imagen de code-agent para habilitar la funcion del escaneo SAST
+2. Saca la imagen de code-agent para habilitar la funcion del escaneo SAST
 
 docker pull snyk/code-agent
 
-# 3. Genera un network privado para correr ambos el Broker client y el code agent. En este ejemplo el mio se llama mySnykBrokerNetwork
+3. Genera un network privado para correr ambos el Broker client y el code agent. En este ejemplo el mio se llama mySnykBrokerNetwork
 
 docker network create mySnykBrokerNetwork
 
-# 4. Ahora verifica que tienes el archivo accept.json encontrado en esta pagina (https://gist.github.com/akanchhaS/7911f22204178a422a7d48d0f85fbdb4#file-accept-json) guardado en tu maquina local en este typo de directorio privado /home/private para poderlo connectar con el contenedor. Asegurate de tener la version correcta del accept.json porque cada integracion tiene su propio accept.json
+4. Ahora verifica que tienes el archivo accept.json encontrado en esta pagina (https://gist.github.com/akanchhaS/7911f22204178a422a7d48d0f85fbdb4#file-accept-json) guardado en tu maquina local en este typo de directorio privado /home/private para poderlo connectar con el contenedor. Asegurate de tener la version correcta del accept.json porque cada integracion tiene su propio accept.json
 
-# 5. Corre el contenedor
+5. Corre el contenedor
 
 docker run --restart=always \           
            -p 8000:8000 \
@@ -36,7 +35,7 @@ docker run --restart=always \
 # ACCEPT =  remplaza </path/on/local/private:/private> con el directorio privado donde ha sido guardado el archivo accept.json
 # network = asegurate de que el nombre del network es el mismo que el generado en el paso #3
 
-# 6. Ahora es necesario correr el code-agent
+6. Ahora es necesario correr el code-agent
 
 docker run --name code-agent \
     -p 3000:3000 \
