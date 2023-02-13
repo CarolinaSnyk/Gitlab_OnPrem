@@ -30,7 +30,7 @@ docker run --restart=always \
 # BROKER_TOKEN = este token esta encontrado en la plataforma de snyk, puede ser extraido mediante el API o puede ser encontrado en la plataforma UI (para mas informacion https://docs.snyk.io/integrations/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-broker-token)
 # GITLAB_TOKEN = Genera esta token del lado de Gitlab. Gitlab personal access token con permisos de MAINTAINER y el scope: API
 # https://docs.snyk.io/integrations/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-scm-token
-# GITLAB = Gitlab host name. Puede ser <https://gitlab.com> o el nombre de el website de gitlab utilizado por la empresa
+# GITLAB = Gitlab host name. Puede ser <gitlab.com> o el nombre de el website de gitlab utilizado por la empresa
 # BROKER_CLIENT_URL = local host puede ser <http://127.0.0.1:8000>
 # ACCEPT =  remplaza </path/on/local/private> :/private con el directorio privado donde ha sido guardado el archivo accept.json
 # network = asegurate de que el nombre del network es el mismo que el generado en el paso #3
