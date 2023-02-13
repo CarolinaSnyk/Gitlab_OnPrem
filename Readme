@@ -32,7 +32,7 @@ docker run --restart=always \
 # https://docs.snyk.io/integrations/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-scm-token
 # GITLAB = Gitlab host name. Puede ser <https://gitlab.com> o el nombre de el website de gitlab utilizado por la empresa
 # BROKER_CLIENT_URL = local host puede ser <http://127.0.0.1:8000>
-# ACCEPT =  remplaza </path/on/local/private:/private> con el directorio privado donde ha sido guardado el archivo accept.json
+# ACCEPT =  remplaza </path/on/local/private> :/private con el directorio privado donde ha sido guardado el archivo accept.json
 # network = asegurate de que el nombre del network es el mismo que el generado en el paso #3
 
 6. Ahora es necesario correr el code-agent
